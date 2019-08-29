@@ -9,6 +9,7 @@ PyTorch code for our ICLR 2018 and SIGIR 2019 papers.
 The codebase contains source-code of 8 document ranking models, 3 query suggestions models and 3 multi-task context-aware ranking and suggestion models. 
 
 ##### Document Ranking Models
+- ESM: Embedding Space Model [See the details in our ICLR'18 paper]
 - DSSM: [Learning Deep Structured Semantic Models for Web Search using Clickthrough Data](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cikm2013_DSSM_fullversion.pdf)
 - CDSSM: [Learning Semantic Representations Using Convolutional Neural Networks for Web Search](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/www2014_cdssm_p07.pdf)
 - DRMM: [A Deep Relevance Matching Model for Ad-hoc Retrieval](https://arxiv.org/abs/1711.08611)
