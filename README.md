@@ -4,9 +4,30 @@
 
 PyTorch code for our ICLR 2018 and SIGIR 2019 papers.
   - [ICLR 2018] [Multi-task Learning for Document Ranking and Query Suggestion](https://openreview.net/pdf?id=SJ1nzBeA-)
-  - [SIGIR 2019] [Context Attentive Document Ranking and Query Suggestion](https://arxiv.org/pdf/1906.02329.pdf)
+  - [SIGIR 2019] [Context Attentive Document Ranking and Query Suggestion](https://arxiv.org/abs/1906.02329)
 
-The codebase contains source-code of 8 document ranking models, 3 query suggestions models and 3 multi-task context-aware ranking and suggestion models.
+The codebase contains source-code of 8 document ranking models, 3 query suggestions models and 3 multi-task context-aware ranking and suggestion models. 
+
+##### Document Ranking Models
+- DSSM: [Learning Deep Structured Semantic Models for Web Search using Clickthrough Data](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cikm2013_DSSM_fullversion.pdf)
+- CDSSM: [Learning Semantic Representations Using Convolutional Neural Networks for Web Search](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/www2014_cdssm_p07.pdf)
+- DRMM: [A Deep Relevance Matching Model for Ad-hoc Retrieval](https://arxiv.org/abs/1711.08611)
+- ARCI/ARCII: [Convolutional Neural Network Architectures for Matching Natural Language Sentences](https://arxiv.org/pdf/1503.03244.pdf)
+- DUET: [Learning to Match using Local and Distributed Representations of Text for Web Search](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/10/wwwfp0192-mitra.pdf)
+- MATCH TENSOR: [Match-Tensor: a Deep Relevance Model for Search](https://arxiv.org/abs/1701.07795)
+
+##### Query Suggestion Models
+
+- HREDQS: [A Hierarchical Recurrent Encoder-Decoder for Generative Context-Aware Query Suggestion](https://arxiv.org/abs/1507.02221)
+- Seq2seq with Attention: [Effective Approaches to Attention-based Neural Machine Translation](https://nlp.stanford.edu/pubs/emnlp15_attn.pdf)
+- ACG: [Learning to Attend, Copy, and Generate for Session-Based Quer Suggestion](https://arxiv.org/abs/1708.03418)
+
+Please note, we have a simplied implementation of ACG.
+
+##### Multi-task Learning Models
+
+- MNSRF/M-MATCH-TENSOR: [Multi-task Learning for Document Ranking and Query Suggestion](https://openreview.net/pdf?id=SJ1nzBeA-)
+- CARS: [Context Attentive Document Ranking and Query Suggestion](https://arxiv.org/abs/1906.02329)
 
 ### Requirements
 
@@ -62,9 +83,14 @@ We are unable to make our experimental dataset publicly available. However, we a
 | Avg Click Per Query |    1.05 |  1.05  |   1.05 |
 | Max Click Per Query |       6 |   6    |      6 |
 
-### Results on the Artificial Dataset (with this Github version)
+### Results on the Artificial Dataset
 
 Coming soon!
+
+### Acknowledgement
+
+I borrowed and modified code from [DrQA](https://github.com/facebookresearch/DrQA), [OpenNMT](https://github.com/OpenNMT/OpenNMT-py). I would like to expresse my gratitdue for authors of these repositeries.
+
 
 ### Citation
 
