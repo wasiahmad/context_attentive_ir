@@ -40,7 +40,7 @@ class MNSRF(nn.Module):
 
         self.decoder = Decoder(rnn_type=args.rnn_type,
                                input_size=self.embedder.output_size,
-                               bidirection=args.bidirection,
+                               bidirection=False,
                                nlayers=args.nlayers,
                                nhid=args.nhid_session,  # check hidsize
                                attn_type='none',

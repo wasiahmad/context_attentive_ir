@@ -154,7 +154,7 @@ class CARS(nn.Module):
 
             self.decoder = Decoder(rnn_type=args.rnn_type,
                                    input_size=self.embedder.output_size,
-                                   bidirection=args.bidirection,
+                                   bidirection=False,
                                    nlayers=1,
                                    nhid=args.nhid_decoder,  # check hidsize
                                    attn_type=args.attn_type,
@@ -445,7 +445,7 @@ class CARS(nn.Module):
         else:
             hidden_states = None
 
-        if len(cell_states) != 0:
+        if cell_states:
             cell_states = torch.cat(cell_states[:-1], dim=1)
             cell_states = self.transform_cell(cell_states)
             states = (hidden_states, cell_states)
