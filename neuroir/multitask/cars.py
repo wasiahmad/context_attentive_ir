@@ -681,7 +681,7 @@ class CARS(nn.Module):
                 attn_weights = self.d_attn(encodings).squeeze(2)
 
             if mask is not None:
-                attn_weights.masked_fill_(1 - mask, -float('inf'))
+                attn_weights.masked_fill_(~mask, -float('inf'))
             attn_weights = f.softmax(attn_weights, 1)
             pooled_encodings = torch.bmm(encodings.transpose(1, 2),
                                          attn_weights.unsqueeze(2)).squeeze(2)

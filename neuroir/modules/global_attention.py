@@ -148,7 +148,7 @@ class GlobalAttention(nn.Module):
         if memory_lengths is not None:
             mask = sequence_mask(memory_lengths, max_len=align.size(-1))
             mask = mask.unsqueeze(1)  # Make it broadcastable.
-            align.data.masked_fill_(1 - mask, -float('inf'))
+            align.data.masked_fill_(~mask, -float('inf'))
 
         # We adopt coverage attn described in Paulus et al., 2018
         # REF: https://arxiv.org/abs/1705.04304
