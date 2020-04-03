@@ -23,7 +23,7 @@ The codebase contains source-code of 8 document ranking models, 3 query suggesti
 - Seq2seq with Attention: [Effective Approaches to Attention-based Neural Machine Translation](https://nlp.stanford.edu/pubs/emnlp15_attn.pdf)
 - ACG: [Learning to Attend, Copy, and Generate for Session-Based Quer Suggestion](https://arxiv.org/abs/1708.03418)
 
-Please note, we have a simplied implementation of ACG.
+Please note, we have a simplified implementation of ACG.
 
 ##### Multi-task Learning Models
 
